@@ -1,0 +1,57 @@
+#main{
+    position: relative;
+}
+#image {
+    width:100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2352px;
+    display: block;
+}
+.custom-head {
+    position: absolute;
+    top: 16rem;
+    margin-left: 17%;
+}
+#title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 5rem;
+    /* font-weight: 600; */
+    /* position: relative; */
+    
+}
+
+#year {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3.5rem;
+    /* font-weight: 600; */
+    /* position: relative;
+    top: 12rem;
+    margin-left: 20%; */
+}
+
+.info {
+    width: 48rem;
+}
+#tribute-info {
+    /* font-family: 'Ibarra Real Nova', serif; */
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    /* position: relative;
+    top: 12rem;
+    margin-left: 20%; */
+}
+.img-caption-div {
+    width: 40rem;
+    position: absolute;
+    top: 52rem;
+    margin-left: 17%;
+}
+#img-caption {
+    /* position: absolute; */
+ 
+    /* font-family: 'Ibarra Real Nova', serif; */
+    font-size: 1.5rem;
+}
+
