@@ -1,0 +1,165 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+
+<main id="main">
+  <div class="container">
+    <div class="text-center mt-5 mb-4">
+      <h1 id="title"><a href="http://www.totwars.com" target="_blank">ToTwars</a></h1>
+      <h3>Improvement Survey</h3>
+      <p id="description">We appreciate your time for participation.</p>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-body px-5">
+
+            <form action="" id="survey-form">
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="enter name" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label id="email-label" for="email">Email</label>
+                  <input id="email" type="email" class="form-control" name="email" placeholder="username@domain.com"
+                    required>
+                </div>
+              </div>
+              <!-- AGE GROUP DROPDOWN -->
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <label class="my-1 mr-2" for="dropdown">Which age group do you belong?</label>
+                  <select class="custom-select my-1 mr-sm-2" id="dropdown">
+                    <option selected>Choose age group</option>
+                    <option value="1">12 or younger</option>
+                    <option value="2">13-24</option>
+                    <option value="3">25-36</option>
+                    <option value="3">37 or older</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="row mt-2">
+                <div class="form-group col-md-12">
+                  <label id="number-label" for="number">How many hours do you spend on social media per day?</label>
+                  <div class="col-md-3 hours">
+                    <input id="number" type="number" class="form-control" name="hours" placeholder="0-24" min="0"
+                      max="24">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="form-group col-md-12 label-margin">
+
+                  Is this the first time you are using <a href="http://www.totwars.com" target="_blank">ToTwars</a>?
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline col-md-2">
+                  <input class="form-check-input" type="radio" name="first-time" id="first-time-yes" value="option1">
+                  <label class="form-check-label" for="first-time-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline col-md-2">
+                  <input class="form-check-input" type="radio" name="first-time" id="first-time-no" value="option2">
+                  <label class="form-check-label" for="first-time-no">No</label>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="form-group col-md-12 label-margin">
+                  Would you recommend <a href="http://www.totwars.com" target="_blank">ToTwars</a> to others?
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <div class="form-check form-check-inline col-md-2">
+                  <input class="form-check-input" type="radio" name="recommend" id="recommend-yes" value="option1">
+                  <label class="form-check-label" for="recommend-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline col-md-2">
+                  <input class="form-check-input" type="radio" name="recommend" id="recommend-maybe" value="option2">
+                  <label class="form-check-label" for="recommend-maybe">Maybe</label>
+                </div>
+                <div class="form-check form-check-inline col-md-2">
+                  <input class="form-check-input" type="radio" name="recommend" id="recommend-no" value="option3">
+                  <label class="form-check-label" for="recommend-no">No</label>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="form-group col-md-12 label-margin">
+                  What are the areas that needs improvement?
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="ui" id="ui">
+                  <label class="form-check-label" for="ui">
+                    User Interface Design
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="mobile" id="mobile">
+                  <label class="form-check-label" for="mobile">
+                    Mobile-friendliness
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="connect" id="connect">
+                  <label class="form-check-label" for="connect">
+                    Connecting with others
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="content" id="content">
+                  <label class="form-check-label" for="content">
+                    Contents of Posts
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="comment" id="comment">
+                  <label class="form-check-label" for="comment">
+                    Commenting System
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="notifications" id="notifications">
+                  <label class="form-check-label" for="notifications">
+                    Notifications System
+                  </label>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="form-group col-md-12">
+                  <label id="suggestions" for="suggestions">Any suggestions to help us improve?</label>
+                  <textarea class="form-control" id="suggestions" rows="3"></textarea>
+                </div>
+              </div>
+
+              <button id="submit" type="submit" class="btn btn-primary btn-block">Submit</button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
