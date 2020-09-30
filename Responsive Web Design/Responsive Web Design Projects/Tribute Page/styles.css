@@ -17,30 +17,18 @@
 #title {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 5rem;
-    /* font-weight: 600; */
-    /* position: relative; */
-    
 }
 
 #year {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 3.5rem;
-    /* font-weight: 600; */
-    /* position: relative;
-    top: 12rem;
-    margin-left: 20%; */
 }
 
 .info {
     width: 48rem;
 }
 #tribute-info {
-    /* font-family: 'Ibarra Real Nova', serif; */
     font-size: 1.2rem;
-    /* font-weight: 600; */
-    /* position: relative;
-    top: 12rem;
-    margin-left: 20%; */
 }
 .img-caption-div {
     width: 40rem;
@@ -49,9 +37,69 @@
     margin-left: 17%;
 }
 #img-caption {
-    /* position: absolute; */
- 
-    /* font-family: 'Ibarra Real Nova', serif; */
     font-size: 1.5rem;
 }
 
+@media (max-width: 1500px) {
+    .custom-head {
+        position: absolute;
+        top: 10rem;
+        margin-left: 10%;
+    }
+    .info {
+        width: 38rem;
+    }
+    .img-caption-div {
+        width: 38rem;
+        position: absolute;
+        top: 45rem;
+        margin-left: 10%;
+    }
+    #title {
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 4rem;
+    }
+    
+    #year {
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 2.5rem;
+    }
+    #tribute-info {
+        font-size: 1.1rem;
+    }
+    #img-caption {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .custom-head {
+        position: absolute;
+        top: 6rem;
+        margin-left: 10%;
+    }
+    .info {
+        width: 30rem;
+    }
+    .img-caption-div {
+        width: 30rem;
+        position: absolute;
+        top: 40rem;
+        margin-left: 10%;
+    }
+    #title {
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 4rem;
+    }
+    
+    #year {
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 2.5rem;
+    }
+    #tribute-info {
+        font-size: 1.1rem;
+    }
+    #img-caption {
+        font-size: 1.2rem;
+    }
+}
