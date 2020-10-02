@@ -1,0 +1,460 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+
+<body data-spy="scroll" data-target="#navbar" data-offset="1">
+  <div class="row">
+    <div class="col-md-2 nav-section">
+      <nav id="navbar" class="navbar flex-column">
+        <header><a class="navbar-brand" href="#">Python Tutorial</a></header>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#Introduction">Introduction</a>
+          <!-- <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+          </nav> -->
+          <a class="nav-link" href="#Python_Syntax">Python Syntax</a>
+          <a class="nav-link" href="#Python_Variables">Python Variables</a>
+          <a class="nav-link" href="#Python_Data_Types">Python Data Types</a>
+          <a class="nav-link" href="#Python_Operators">Python Operators</a>
+          <a class="nav-link" href="#Reference">Reference</a>
+          <!-- <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+          </nav> -->
+        </nav>
+      </nav>
+    </div>
+
+    <div class="col-md-10 bg-light">
+      <!-- <div class="scroll-body" data-spy="scroll" data-target="#navbar" data-offset="70"> -->
+      <main id="main-doc">
+        <!-- INTRODUCTION -->
+        <section id="Introduction" class="main-section">
+          <header>Introduction</header>
+          <h4>What is Python?</h4>
+          <article>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is used for:</p>
+          </article>
+          <ul>
+            <li>web development (server-side),</li>
+            <li>software development,</li>
+            <li>mathematics,</li>
+            <li>system scripting.</li>
+          </ul>
+          <h5>What can Python do?</h5>
+          <ul>
+            <li>Python can be used on a server to create web applications.</li>
+            <li>Python can be used alongside software to create workflows.</li>
+            <li>Python can connect to database systems. It can also read and modify files.</li>
+            <li>Python can be used to handle big data and perform complex mathematics.</li>
+            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+          </ul>
+          <h5>Why Python?</h5>
+          <ul>
+            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+            <li>Python has a simple syntax similar to the English language.</li>
+            <li>Python has syntax that allows developers to write programs with fewer lines than some other
+              programming
+              languages.</li>
+            <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This
+              means that prototyping can be very quick.</li>
+            <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+          </ul>
+          <h5>Good to know</h5>
+          <ul>
+            <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial.
+              However,
+              Python 2, although not being updated with anything other than security updates, is still quite popular.
+            </li>
+            <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an
+              Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly
+              useful when managing larger collections of Python files.</li>
+          </ul>
+          <h5>Python Syntax compared to other programming languages</h5>
+          <ul>
+            <li>Python was designed for readability, and has some similarities to the English language with influence
+              from mathematics.</li>
+            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use
+              semicolons or parentheses.</li>
+            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions
+              and classes. Other programming languages often use curly-brackets for this purpose.</li>
+          </ul>
+        </section>
+        <hr>
+        <!-- SYNTAX -->
+        <section id="Python_Syntax" class="main-section">
+          <header>Python Syntax</header>
+          <h4>Execute Python Syntax</h4>
+          <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command
+            Line:
+          </p>
+          <div class="snippet">
+            <code>>>> print("Hello, World!")</code><br>
+            <samp>Hello, World!</samp>
+          </div>
+          <br>
+          <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command
+            Line:</p>
+          <div class="snippet">
+            <code>C:\Users\Your Name>python myfile.py</code>
+          </div>
+          <h4>Python Indentation</h4>
+          <p>Indentation refers to the spaces at the beginning of a code line.</p>
+          <p>Where in other programming languages the indentation in code is for readability only, the indentation in
+            Python is very important.</p>
+          <p>Python uses indentation to indicate a block of code.</p>
+          <h6>Example</h6>
+          <div class="snippet">
+            <code>
+                if 5 > 2:<br>
+                <a>print("Five is greater than two!")</a>
+              </code>
+          </div>
+        </section>
+        <hr>
+        <!-- VARIABLES -->
+        <section id="Python_Variables" class="main-section">
+          <header>Python Variables</header>
+          <h4>Creating Variables</h4>
+          <p>Variables are containers for storing data values.</p>
+          <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+          <p>A variable is created the moment you first assign a value to it.</p>
+          <h6>Example</h6>
+          <div class="snippet">
+            <code>
+                <var>x</var> = 5 <br>
+                <var>x</var> = "John" <br>
+                print(<var>x</var>) <br>
+                print(<var>x</var>)
+              </code>
+          </div>
+          <p>Variables do not need to be declared with any particular <em>type</em>, and can even change type after
+            they
+            have been set.</p>
+          <h6>Example</h6>
+          <div class="snippet">
+            <code>
+                <var>x</var> = 4 # <em>x is of type int</em> <br>
+                <var>x</var> = "Sally" # <em>x is now of type str</em> <br>
+                print(<var>x</var>)
+              </code>
+          </div>
+          <p>String variables can be declared either by using single or double quotes:</p>
+          <div class="snippet">
+            <code>
+              <var>x</var> = "John" <br>
+              # <em>is the same as</em> <br>
+              <var>x</var> = 'John'
+              </code>
+          </div>
+          <h4>Variable Names</h4>
+          <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+            Rules for Python variables:</p>
+          <ul>
+            <li>A variable name must start with a letter or the underscore character</li>
+            <li>A variable name cannot start with a number</li>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+            <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+          </ul>
+          <h6>Example</h6>
+          <div class="snippet">
+            <code>
+              #<em>Legal variable names:</em><br>
+              <var>myvar</var> = "John"<br>
+              <var>my_var</var> = "John"<br>
+              <var>_my_var</var> = "John"<br>
+              <var>myVar</var> = "John"<br>
+              <var>MYVAR</var> = "John"<br>
+              <var>myvar2</var> = "John"<br>
+              <br>
+              #<em>Illegal variable names:</em><br>
+              <var>2myvar</var> = "John"<br>
+              <var>my-var</var> = "John"<br>
+              <var>my var</var> = "John"
+              </code>
+          </div>
+        </section>
+        <hr>
+        <section id="Python_Data_Types" class="main-section">
+          <header>Python Data Types</header>
+          <h4>Built-in Data Types</h4>
+          <p>In programming, data type is an important concept.</p>
+          <p>Variables can store data of different types, and different types can do different things.</p>
+          <p>Python has the following data types built-in by default, in these categories:</p>
+          <table class="w3-table">
+            <tr>
+              <td style="width:160px;">Text Type:</td>
+              <td><code class="w3-codespan">str</code></td>
+            </tr>
+            <tr>
+              <td>Numeric Types:</td>
+              <td><code class="w3-codespan">int</code>, <code class="w3-codespan">float</code>,
+                <code class="w3-codespan">complex</code></td>
+            </tr>
+            <tr>
+              <td>Sequence Types:</td>
+              <td><code class="w3-codespan">list</code>, <code class="w3-codespan">tuple</code>,
+                <code class="w3-codespan">range</code></td>
+            </tr>
+            <tr>
+              <td>Mapping Type:</td>
+              <td><code class="w3-codespan">dict</code></td>
+            </tr>
+            <tr>
+              <td>Set Types:</td>
+              <td><code class="w3-codespan">set</code>, <code class="w3-codespan">frozenset</code></td>
+            </tr>
+            <tr>
+              <td>Boolean Type:</td>
+              <td><code class="w3-codespan">bool</code></td>
+            </tr>
+            <tr>
+              <td>Binary Types:</td>
+              <td><code class="w3-codespan">bytes</code>, <code class="w3-codespan">bytearray</code>,
+                <code class="w3-codespan">memoryview</code></td>
+            </tr>
+          </table>
+          <h4>Getting the Data Type</h4>
+          <p>You can get the data type of any object by using the <code>type()</code> function:</p>
+          <h6>Example</h6>
+          <p>Print the data type of the variable <strong>x</strong>:</p>
+          <div class="snippet">
+            <code>
+              <var>x</var> = 5<br>
+              print(type(<var>x</var>))
+              </code>
+          </div>
+        </section>
+        <hr>
+        <section id="Python_Operators" class="main-section">
+          <header>Python Operators</header>
+          <h4>Python Operators</h4>
+          <p>Operators are used to perform operations on variables and values.</p>
+          <p>Python divides the operators in the following groups:</p>
+          <ul>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Identity operators</li>
+            <li>Membership operators</li>
+            <li>Bitwise operators</li>
+          </ul>
+          <h4>Python Arithmetic Operators</h4>
+          <p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+          <div class="snippet">
+            <table class="">
+              <tr>
+                <th style="width:20%">Operator</th>
+                <th style="width:30%">Name</th>
+                <th style="width:20%">Example</th>
+              </tr>
+              <tr>
+                <td>+</td>
+                <td>Addition</td>
+                <td>x + y</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+                <td>x - y</td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>x * y</td>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>Division</td>
+                <td>x / y</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>Modulus</td>
+                <td>x % y</td>
+              </tr>
+              <tr>
+                <td>**</td>
+                <td>Exponentiation</td>
+                <td>x ** y</td>
+              </tr>
+              <tr>
+                <td>//</td>
+                <td>Floor division</td>
+                <td>x // y</td>
+              </tr>
+            </table>
+          </div>
+          <h4>Python Assignment Operators</h4>
+          <p>Assignment operators are used to assign values to variables:</p>
+          <div class="snippet">
+            <table class="">
+              <tr>
+                <th style="width:20%">Operator</th>
+                <th style="width:30%">Example</th>
+                <th style="width:20%">Same As</th>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>x = 5</td>
+                <td>x = 5</td>
+              </tr>
+              <tr>
+                <td>+=</td>
+                <td>x += 3</td>
+                <td>x = x + 3</td>
+              </tr>
+              <tr>
+                <td>-=</td>
+                <td>x -= 3</td>
+                <td>x = x - 3</td>
+              </tr>
+              <tr>
+                <td>*=</td>
+                <td>x *= 3</td>
+                <td>x = x * 3</td>
+              </tr>
+              <tr>
+                <td>/=</td>
+                <td>x /= 3</td>
+                <td>x = x / 3</td>
+              </tr>
+              <tr>
+                <td>%=</td>
+                <td>x %= 3</td>
+                <td>x = x % 3</td>
+              </tr>
+              <tr>
+                <td>//=</td>
+                <td>x //= 3</td>
+                <td>x = x // 3</td>
+              </tr>
+              <tr>
+                <td>**=</td>
+                <td>x **= 3</td>
+                <td>x = x ** 3</td>
+              </tr>
+              <tr>
+                <td>&amp;=</td>
+                <td>x &amp;= 3</td>
+                <td>x = x &amp; 3</td>
+              </tr>
+              <tr>
+                <td>|=</td>
+                <td>x |= 3</td>
+                <td>x = x | 3</td>
+              </tr>
+              <tr>
+                <td>^=</td>
+                <td>x ^= 3</td>
+                <td>x = x ^ 3</td>
+              </tr>
+              <tr>
+                <td>&gt;&gt;=</td>
+                <td>x &gt;&gt;= 3</td>
+                <td>x = x &gt;&gt; 3</td>
+              </tr>
+              <tr>
+                <td>&lt;&lt;=</td>
+                <td>x &lt;&lt;= 3</td>
+                <td>x = x &lt;&lt; 3</td>
+              </tr>
+            </table>
+          </div>
+          <h4>Python Comparison Operators</h4>
+          <p>Comparison operators are used to compare two values:</p>
+          <div class="snippet">
+            <table class="w3-table-all notranslate">
+              <tr>
+                <th style="width:20%">Operator</th>
+                <th style="width:30%">Name</th>
+                <th style="width:20%">Example</th>
+              </tr>
+              <tr>
+                <td>==</td>
+                <td>Equal</td>
+                <td>x == y</td>
+              </tr>
+              <tr>
+                <td>!=</td>
+                <td>Not equal</td>
+                <td>x != y</td>
+              </tr>
+              <tr>
+                <td>&gt;</td>
+                <td>Greater than</td>
+                <td>x &gt; y</td>
+              </tr>
+              <tr>
+                <td>&lt;</td>
+                <td>Less than</td>
+                <td>x &lt; y</td>
+              </tr>
+              <tr>
+                <td>&gt;=</td>
+                <td>Greater than or equal to</td>
+                <td>x &gt;= y</td>
+              </tr>
+              <tr>
+                <td>&lt;=</td>
+                <td>Less than or equal to</td>
+                <td>x &lt;= y</td>
+              </tr>
+            </table>
+          </div>
+          <h4>Python Logical Operators</h4>
+          <p class="text-muted">Logical operators are used to combine conditional statements:</p>
+          <div class="snippet">
+            <table class="w3-table-all notranslate">
+              <tr>
+                <th style="width:20%">Operator</th>
+                <th style="width:30%">Description</th>
+                <th style="width:20%">Example</th>
+              </tr>
+              <tr>
+                <td>and&nbsp;</td>
+                <td>Returns True if both statements are true</td>
+                <td>x &lt; 5 and&nbsp; x &lt; 10</td>
+              </tr>
+              <tr>
+                <td>or</td>
+                <td>Returns True if one of the statements is true</td>
+                <td>x &lt; 5 or x &lt; 4</td>
+              </tr>
+              <tr>
+                <td>not</td>
+                <td>Reverse the result, returns False if the result is true</td>
+                <td>not(x &lt; 5 and x &lt; 10)</td>
+              </tr>
+            </table>
+          </div>
+
+        </section>
+        <hr>
+        <section id="Reference" class="main-section">
+          <header>Reference</header>
+          <p>Contents of this page are taken from <a href="https://www.w3schools.com/python/default.asp"
+              target="_blank">W3Schools</a>.
+          </p>
+        </section>
+      </main>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</body>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
