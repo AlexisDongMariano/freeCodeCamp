@@ -1,0 +1,123 @@
+/* img {
+    width: 320px !important;
+} */
+
+.card-img-top {
+    width: 100%;
+    /* height: 15vw;
+    object-fit: cover; */
+}
+
+body {
+    background-color: #121212!important;
+    
+}
+
+h1, h2, h3, h5, h6 {
+    color: #e2e8f0;
+}
+
+h1 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+h4 {
+    color: #bbb; 
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+p {
+    color: #bbb;
+}
+
+hr {
+    border-color: #333;
+    margin: 8rem auto 8rem auto;
+}
+
+
+/* NAV */
+.navbar {
+    padding: 1% 15% 1% 15% !important;
+    background-color: #121212!important;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #e2e8f0 !important;
+}
+
+.nav-item {
+    padding: 0 1.1rem;
+}
+
+#nav-projects {
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+
+
+/* WELCOME SECTION */
+#introduction {
+    margin-top: 10rem;
+}
+
+/* PROJECT SECTION */
+.card {
+    background-color: #333
+}
+
+.card-text {
+    color: #e2e8f0;
+}
+
+/* a .card-text {
+    text-decoration: none !important;
+} */
+
+a:hover {
+    text-decoration: none !important;
+}
+
+/* SKILLS SECTION */
+#skills {
+    /* margin: 5rem auto 5rem auto; */
+}
+
+.icon-container{
+    background-color:#333;
+    /* width: 7rem; */
+    /* padding-left: 1rem; */
+    /* margin: auto 1rem; */
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    border-radius: 0.2rem;
+    width: 8rem;
+
+}
+.icon {
+    /* color: #e2e8f0; */
+    color: #fff;
+}
+
+
+
+@media (max-width: 991px){
+    .navbar {
+        padding: 1% 15% 1% 15% !important;
+    }
+}
