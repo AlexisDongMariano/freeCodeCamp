@@ -1,6 +1,10 @@
-/* img {
-    width: 320px !important;
-} */
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
 
 .card-img-top {
     width: 100%;
@@ -19,6 +23,7 @@ h1, h2, h3, h5, h6 {
 
 h1 {
     /* font-family: 'Roboto', sans-serif; */
+    font-size: 3.5rem;
     font-weight: 700;
 }
 
@@ -68,12 +73,20 @@ hr {
     border-radius: 0.2rem;
 }
 
+.first-hr {
+    border-color: #333;
+    margin: 10rem auto 0 auto;
+}
+
 
 
 
 /* WELCOME SECTION */
+#welcome-section{
+    height: 100vh;
+}
 #introduction {
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 /* PROJECT SECTION */
@@ -89,9 +102,7 @@ hr {
     text-decoration: none !important;
 } */
 
-a:hover {
-    text-decoration: none !important;
-}
+
 
 /* SKILLS SECTION */
 #skills {
@@ -109,12 +120,30 @@ a:hover {
     width: 8rem;
 
 }
+
 .icon {
     /* color: #e2e8f0; */
     color: #fff;
 }
 
+.final-hr{
+   margin: 8rem auto 4rem auto; 
+}
 
+
+
+/* FOOTER */
+footer {
+    margin-bottom: 4rem;
+}
+.footer-link {
+    color: #bbb;
+    margin: auto 1rem;
+    font-size: 1.25rem;
+}
+.footer-link:hover {
+    color: #bbb;
+}
 
 @media (max-width: 991px){
     .navbar {
