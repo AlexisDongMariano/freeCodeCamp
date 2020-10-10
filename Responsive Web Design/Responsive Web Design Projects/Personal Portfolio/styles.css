@@ -47,8 +47,8 @@ p {
 }
 
 hr {
-    border-color: #333;
-    margin: 8rem auto 8rem auto;
+    border-color: #333 !important;
+    margin: 8rem auto 8rem auto !important;
 }
 
 
@@ -74,8 +74,8 @@ hr {
 }
 
 .first-hr {
-    border-color: #333;
-    margin: 10rem auto 0 auto;
+    border-color: #333 !important;
+    margin: 10rem auto 0 auto !important;
 }
 
 
@@ -127,7 +127,7 @@ hr {
 }
 
 .final-hr{
-   margin: 8rem auto 4rem auto; 
+   margin: 8rem auto 4rem auto !important; 
 }
 
 
